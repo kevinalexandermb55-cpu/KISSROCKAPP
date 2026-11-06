@@ -1,0 +1,35 @@
+KISS ROCK PLAYER
+
+ARCHIVOS
+- index.html: abre este archivo en un navegador moderno.
+- styles.css: aspecto visual y animación del disco.
+- app.js: controles y lógica de reproducción.
+- music-library.js: lista de canciones incluidas para cargar al abrir el reproductor.
+- music/: contiene las 287 canciones extraídas de KISS MUSIC.zip; mantenla junto a index.html.
+- kiss-destroyer.jpg: imagen usada como fondo del escenario.
+- kiss-record.jpg: portada circular del disco; muestra a los cuatro integrantes.
+- kiss-logo.png: logo de KISS de la cabecera.
+- manifest.webmanifest y app-icons/: icono Destroyer para la pestaña y accesos directos instalados.
+- paul-stanley.png, gene-simmons.png, ace-frehley.png y peter-criss.png: retratos separados para la sección de integrantes.
+- gallery/: nueve portadas de álbumes tomadas del ZIP de WhatsApp.
+- video/: película Scooby-Doo! y KISS: Rock and Roll Mystery incluida en video.zip.
+
+IMAGEN
+La imagen del escenario es kiss-destroyer.jpg. La imagen de los cuatro integrantes en el disco es kiss-record.jpg. Para cambiar la portada del disco, reemplaza kiss-record.jpg conservando ese nombre y déjala junto a index.html, styles.css y app.js. El logo de la cabecera es kiss-logo.png.
+
+USO Y MODO SIN CONEXIÓN
+Abre index.html. Las canciones de la carpeta music/ aparecen automáticamente en la colección. Pulsa CARGAR CARPETA o SELECCIONAR ARCHIVOS para agregar más música. Mantén todos los archivos y las carpetas music/, gallery/, video/ y app-icons/ junto a index.html. Las canciones, la película, las portadas, las imágenes y el icono están guardados localmente; el reproductor funciona sin internet y no sube tu música a ningún servicio.
+
+INTEGRANTES Y FAVORITAS
+Los cuatro retratos del collage ya están recortados e incluidos. Toca un retrato para iluminarlo y mostrar el instrumento. Cada tarjeta tiene el nombre artístico, una descripción breve y una de tus canciones favoritas con botón para reproducirla. Usa ☆ en la colección para marcar otros temas como favoritos.
+
+Los instrumentos aparecen como ilustraciones SVG con perspectiva, reflejos, sombra y movimiento 3D estilizado al tocar el retrato.
+
+En celular, desliza horizontalmente para cambiar de integrante o usa las flechas del carrusel. En pantallas grandes se muestran las cuatro tarjetas en una cuadrícula. La sección Multitud en concierto tiene ambientes de luces azul, roja o automática; se anima mientras suena la música y muestra pequeñas guitarras que caen lentamente, separadas del disco. El carrusel de álbumes usa las portadas locales y funciona sin internet.
+
+PELÍCULA
+La película está incluida en video/scooby-doo-kiss-rock-and-roll-mystery-2015.mp4. Pulsa VER PELÍCULA o usa los controles del reproductor dentro de Cine de backstage. Para abrir otro archivo, pulsa ELEGIR OTRO VIDEO.
+
+ICONO EN EL CELULAR
+El icono usa la portada Destroyer. Para agregar KISS ROCK PLAYER a la pantalla de inicio, la página debe estar publicada o servida por una dirección HTTPS. La carpeta local sigue siendo la versión para abrir y usar sin conexión.
+

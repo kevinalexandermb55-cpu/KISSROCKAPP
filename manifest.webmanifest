@@ -1,0 +1,31 @@
+{
+  "id": "./index.html",
+  "name": "KISS ROCK PLAYER",
+  "short_name": "KISS Player",
+  "description": "Tu colección KISS y tu concierto personal.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "icons": [
+    {
+      "src": "app-icons/kiss-destroyer-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "app-icons/kiss-destroyer-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "app-icons/kiss-destroyer-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
