@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="loading-screen" id="loadingScreen" role="status" aria-label="Cargando KISS ROCK PLAYER">
+    <span class="loading-title">KISS ROCK PLAYER</span>
+    <div class="loading-letters" aria-label="KISS">
+      <img class="loading-letter letter-k" src="loading/letter-k.jpg" alt="K">
+      <img class="loading-letter letter-i" src="loading/letter-i.jpg" alt="I">
+      <img class="loading-letter letter-s-one" src="loading/letter-s-one.jpg" alt="S">
+      <img class="loading-letter letter-s-two" src="loading/letter-s-two.jpg" alt="S">
+    </div>
+    <span class="loading-caption">PREPARANDO EL ESCENARIO</span>
+    <span class="loading-line" aria-hidden="true"></span>
+  </div>
   <main class="player">
     <header class="topbar"><a class="logo" href="#" aria-label="KISS"><img src="kiss-logo.png" alt="KISS"></a><div><strong>ROCK PLAYER</strong><small>YOUR PERSONAL ROCK CONCERT</small></div><span class="live"><i></i> EN VIVO</span></header>
     <section class="stage" aria-label="Escenario del reproductor">
@@ -48,15 +59,15 @@
       <article class="album-card" style="--album-color:#d5d8e4"><img src="gallery/monster-cover.jpeg" alt="Portada del álbum Monster" loading="lazy"><div class="album-info"><span>DISCO · KISS</span><h3>MONSTER</h3><p>El grupo reunido en una imagen de metal y guitarras.</p></div></article>
       <article class="album-card" style="--album-color:#ffca58"><img src="gallery/love-gun-cover.jpeg" alt="Portada del álbum Love Gun" loading="lazy"><div class="album-info"><span>DISCO · KISS</span><h3>LOVE GUN</h3><p>Una portada teatral para uno de sus clásicos de estudio.</p></div></article>
     </div><div class="album-dots" id="albumDots" aria-hidden="true"></div></section>
-    <section class="movie-zone" aria-labelledby="movieTitle"><div class="movie-poster"><img src="kiss-logo.png" alt="KISS"><span>Y SCOOBY-DOO!</span><b>ROCK AND ROLL<br>MYSTERY</b><i aria-hidden="true">✦　🐾　✦</i></div><div class="movie-copy"><span class="eyebrow">CINE DE BACKSTAGE</span><h2 id="movieTitle">Scooby-Doo! y KISS:<br><em>Rock and Roll Mystery</em></h2><p>La película está incluida en la app. Reprodúcela aquí o elige otro video de tu equipo.</p><div class="movie-actions"><button class="load movie-play-button" id="playMovieButton" type="button">▶ VER PELÍCULA</button><label class="movie-replace" for="movieFile">ELEGIR OTRO VIDEO</label></div><input id="movieFile" type="file" accept="video/mp4,video/webm,video/quicktime" hidden></div><video id="moviePlayer" controls playsinline preload="metadata" src="video/scooby-doo-kiss-rock-and-roll-mystery-2015.mp4"></video></section>
-    <section class="library"><div class="library-head"><div><span class="eyebrow">BACKSTAGE</span><h2>Mi colección <em>KISS</em></h2><p id="count">0 canciones</p></div><label class="load" for="folder">＋ CARGAR CARPETA</label><input id="folder" type="file" accept="audio/*" webkitdirectory multiple hidden></div>
-      <div class="drop" id="drop"><strong>Tu colección. Tu concierto.</strong><span>Arrastra tus canciones aquí o selecciónalas desde tu equipo.</span><label class="load secondary" for="files">SELECCIONAR ARCHIVOS</label><input id="files" type="file" accept="audio/*" multiple hidden></div>
+    <section class="live-feature" aria-labelledby="liveTitle"><div class="live-photo-frame"><img src="gallery/kiss-alive-concert.jpg" alt="KISS tocando en vivo bajo el letrero iluminado de la banda" loading="lazy"></div><div class="live-copy"><span class="eyebrow">ENERGÍA EN VIVO</span><h2 id="liveTitle">KISS en concierto:<br><em>Detroit Rock City</em></h2><p>La fuerza del escenario y uno de los himnos más potentes de KISS, juntos en esta sección.</p><button class="load live-play-button" id="playDetroitButton" type="button">▶ REPRODUCIR DETROIT ROCK CITY</button><span class="live-track-note">CANCIÓN INCLUIDA · DISPONIBLE SIN CONEXIÓN</span></div></section>
+    <section class="movie-zone" aria-labelledby="movieTitle"><div class="movie-poster"><img src="kiss-logo.png" alt="KISS"><span>Y SCOOBY-DOO!</span><b>ROCK AND ROLL<br>MYSTERY</b><i aria-hidden="true">✦　🐾　✦</i></div><div class="movie-copy"><span class="eyebrow">CINE DE BACKSTAGE</span><h2 id="movieTitle">Scooby-Doo! y KISS:<br><em>Rock and Roll Mystery</em></h2><p>Elige el archivo de la película que guardaste en tu dispositivo. Se reproduce aquí y no se sube a internet.</p><div class="movie-actions"><label class="load" for="movieFile">＋ CARGAR PELÍCULA</label><button class="load movie-play-button" id="playMovieButton" type="button" disabled>▶ VER PELÍCULA</button></div><p class="movie-file-name" id="movieFileName" aria-live="polite">Todavía no has elegido un video.</p><input id="movieFile" type="file" accept="video/*" hidden></div><video id="moviePlayer" controls playsinline preload="metadata" hidden></video></section>
+    <section class="library"><div class="library-head"><div><span class="eyebrow">BACKSTAGE</span><h2>Mi colección <em>KISS</em></h2><p id="count">0 canciones</p></div><label class="load" for="folder">＋ ELEGIR CARPETA DE MÚSICA</label><input id="folder" type="file" accept="audio/*" webkitdirectory multiple hidden></div>
+      <div class="drop" id="drop"><strong>Tu colección. Tu concierto.</strong><span>Elige tu carpeta de canciones o selecciónalas desde el dispositivo. No se envían a internet.</span><label class="load secondary" for="files">SELECCIONAR CANCIONES</label><input id="files" type="file" accept="audio/*" multiple hidden></div>
       <div class="playlist" id="playlist"><p class="empty">Carga canciones para comenzar.</p></div>
     </section>
     <footer>KISS ROCK PLAYER <span>HECHO PARA AMAR EL ROCK · <b>TURN IT UP</b></span><span class="creator-credit">HECHA POR <b>KEVIN MUÑOZ</b></span></footer>
     <audio id="audio" preload="metadata"></audio>
   </main>
-  <script src="music-library.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

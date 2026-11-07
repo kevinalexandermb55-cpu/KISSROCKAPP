@@ -1,35 +1,38 @@
-KISS ROCK PLAYER
+KISS ROCK PLAYER — VERSIÓN LIGERA
 
-ARCHIVOS
-- index.html: abre este archivo en un navegador moderno.
-- styles.css: aspecto visual y animación del disco.
-- app.js: controles y lógica de reproducción.
-- music-library.js: lista de canciones incluidas para cargar al abrir el reproductor.
-- music/: contiene las 287 canciones extraídas de KISS MUSIC.zip; mantenla junto a index.html.
-- kiss-destroyer.jpg: imagen usada como fondo del escenario.
-- kiss-record.jpg: portada circular del disco; muestra a los cuatro integrantes.
-- kiss-logo.png: logo de KISS de la cabecera.
-- manifest.webmanifest y app-icons/: icono Destroyer para la pestaña y accesos directos instalados.
-- paul-stanley.png, gene-simmons.png, ace-frehley.png y peter-criss.png: retratos separados para la sección de integrantes.
-- gallery/: nueve portadas de álbumes tomadas del ZIP de WhatsApp.
-- video/: película Scooby-Doo! y KISS: Rock and Roll Mystery incluida en video.zip.
+La interfaz, imágenes y cinco canciones vienen incluidas. No contiene la colección completa ni la película. Puedes añadir tu música y video desde el dispositivo cuando quieras.
 
-IMAGEN
-La imagen del escenario es kiss-destroyer.jpg. La imagen de los cuatro integrantes en el disco es kiss-record.jpg. Para cambiar la portada del disco, reemplaza kiss-record.jpg conservando ese nombre y déjala junto a index.html, styles.css y app.js. El logo de la cabecera es kiss-logo.png.
+CANCIONES INCLUIDAS
+- Paul Stanley · The Star Child: I Was Made for Lovin' You
+- Gene Simmons · The Demon: Rock and Roll All Nite
+- Peter Criss · The Catman: Hard Luck Woman
+- Ace Frehley · The Spaceman: Shock Me
+- KISS en vivo: Detroit Rock City
 
-USO Y MODO SIN CONEXIÓN
-Abre index.html. Las canciones de la carpeta music/ aparecen automáticamente en la colección. Pulsa CARGAR CARPETA o SELECCIONAR ARCHIVOS para agregar más música. Mantén todos los archivos y las carpetas music/, gallery/, video/ y app-icons/ junto a index.html. Las canciones, la película, las portadas, las imágenes y el icono están guardados localmente; el reproductor funciona sin internet y no sube tu música a ningún servicio.
+Las primeras cuatro canciones se reproducen desde las tarjetas de los integrantes. Detroit Rock City se reproduce desde la sección «Energía en vivo», junto a la foto de concierto. Las cinco también aparecen en la colección.
 
-INTEGRANTES Y FAVORITAS
-Los cuatro retratos del collage ya están recortados e incluidos. Toca un retrato para iluminarlo y mostrar el instrumento. Cada tarjeta tiene el nombre artístico, una descripción breve y una de tus canciones favoritas con botón para reproducirla. Usa ☆ en la colección para marcar otros temas como favoritos.
+AÑADIR MÁS CANCIONES
+1. Pulsa «ELEGIR CARPETA DE MÚSICA» para seleccionar una carpeta, si el navegador ofrece esa opción.
+2. En celular, si no aparece el selector de carpetas, pulsa «SELECCIONAR CANCIONES» y marca varios archivos.
 
-Los instrumentos aparecen como ilustraciones SVG con perspectiva, reflejos, sombra y movimiento 3D estilizado al tocar el retrato.
+Los archivos se leen desde tu dispositivo; no se suben a GitHub ni a otro servicio. Al cerrar o recargar la página, vuelve a elegir la música adicional. Las cinco canciones incluidas sí siguen disponibles.
 
-En celular, desliza horizontalmente para cambiar de integrante o usa las flechas del carrusel. En pantallas grandes se muestran las cuatro tarjetas en una cuadrícula. La sección Multitud en concierto tiene ambientes de luces azul, roja o automática; se anima mientras suena la música y muestra pequeñas guitarras que caen lentamente, separadas del disco. El carrusel de álbumes usa las portadas locales y funciona sin internet.
+PANTALLA DE CARGA
+La imagen 1234.jpg está separada en cuatro paneles, que aparecen con luces animadas al iniciar la app. Se mantiene al menos 2 segundos y permanece más tiempo si la app todavía está cargando.
 
 PELÍCULA
-La película está incluida en video/scooby-doo-kiss-rock-and-roll-mystery-2015.mp4. Pulsa VER PELÍCULA o usa los controles del reproductor dentro de Cine de backstage. Para abrir otro archivo, pulsa ELEGIR OTRO VIDEO.
+Pulsa «CARGAR PELÍCULA», elige un video guardado en tu dispositivo y luego «VER PELÍCULA». Se reproduce localmente y no se envía a internet. Tendrás que elegirlo otra vez cuando cierres o recargues la app.
 
-ICONO EN EL CELULAR
-El icono usa la portada Destroyer. Para agregar KISS ROCK PLAYER a la pantalla de inicio, la página debe estar publicada o servida por una dirección HTTPS. La carpeta local sigue siendo la versión para abrir y usar sin conexión.
+USO SIN CONEXIÓN
+- Abre index.html desde esta carpeta para usar la app localmente sin internet.
+- Si usas la página publicada, ábrela primero con internet. La interfaz, imágenes y cinco canciones se guardan para abrirlas después sin conexión. La música adicional y la película se eligen desde el dispositivo.
+- En celulares, agregar la app a la pantalla de inicio depende del navegador. La selección de una carpeta también puede variar; elegir varias canciones funciona como alternativa.
 
+CONTENIDO
+- index.html, styles.css y app.js: interfaz y reproductor.
+- service-worker.js y manifest.webmanifest: acceso sin conexión tras la primera visita por HTTPS.
+- favorites/: las cinco canciones incluidas.
+- loading/: los cuatro paneles animados de inicio.
+- gallery/: portadas del carrusel y foto de KISS en vivo.
+- app-icons/: iconos Destroyer.
+- Imágenes del escenario, el disco y los cuatro integrantes.

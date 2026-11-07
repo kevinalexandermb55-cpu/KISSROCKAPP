@@ -2,7 +2,7 @@
   "id": "./index.html",
   "name": "KISS ROCK PLAYER",
   "short_name": "KISS Player",
-  "description": "Tu colección KISS y tu concierto personal.",
+  "description": "Reproductor KISS para escuchar archivos desde tu dispositivo, incluso sin conexión.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
